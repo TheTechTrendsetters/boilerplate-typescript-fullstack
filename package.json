@@ -1,0 +1,56 @@
+{
+  "name": "boilerplate-typescript-fullstack",
+  "version": "1.0.0",
+  "description": "A boilerplate for fullstack projects using typescript, node, express, mysql and vitest",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "linter": "eslint . --ext .ts,.tsx",
+    "linter:fix": "eslint . --ext .ts,.tsx --fix",
+    "linter:format": "prettier --write ./src",
+    "start:dev": "nodemon",
+    "build:prod": "rimraf ./build && tsc",
+    "start:prod": "ts-node ./src/index.ts"
+  },
+  "keywords": [
+    "typescript",
+    "node",
+    "express",
+    "mysql",
+    "boilerplate",
+    "fullstack"
+  ],
+  "author": "Arturo López <lgzarturo@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/morgan": "^1.9.4",
+    "@types/mysql2": "github:types/mysql2",
+    "@types/node": "^18.15.11",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "eslint": "^8.38.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-standard-with-typescript": "^34.0.1",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "nodemon": "^2.0.22",
+    "prettier": "^2.8.7",
+    "rimraf": "^4.4.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4",
+    "vite": "^4.2.1",
+    "vitest": "^0.30.1"
+  },
+  "dependencies": {
+    "awilix": "^8.0.1",
+    "awilix-express": "^8.0.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.2.1",
+    "winston": "^3.8.2"
+  }
+}

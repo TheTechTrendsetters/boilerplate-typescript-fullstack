@@ -1,0 +1,5 @@
+Dockerfile
+docker-compose.yml
+logs/*.log
+node_modules/
+pnpm-lock.yaml
